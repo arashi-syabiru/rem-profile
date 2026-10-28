@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#071525">
+<meta name="description" content="Profil Rem dari anime Re:Zero">
+<title>REM — Character Profile</title>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg:#071525;
+  --panel:#10283e;
+  --blue:#72c8f4;
+  --text:#edf7ff;
+  --muted:#9bb1c4;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  margin:0;
+  color:var(--text);
+  font-family:'DM Sans',sans-serif;
+  line-height:1.7;
+  background:radial-gradient(ellipse at top,#174365,var(--bg) 65%);
+}
+a { color:inherit; text-decoration:none; }
+.wrap { width:min(1050px,90%); margin:auto; }
+header {
+  display:flex; justify-content:space-between;
+  align-items:center; padding:24px 0;
+  border-bottom:1px solid #ffffff20;
+}
+.logo { font-weight:bold; letter-spacing:4px; }
+.logo span { color:var(--blue); }
+nav { display:flex; gap:20px; color:var(--muted); }
+nav a:hover { color:var(--blue); }
+.hero {
+  min-height:560px; display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center; gap:35px; padding:55px 0;
+}
+.tag {
+  color:var(--blue); letter-spacing:3px;
+  font-size:.8rem; font-weight:bold;
+}
+h1 {
+  font:700 clamp(4rem,10vw,7rem)/1 'Playfair Display',serif;
+  margin:20px 0;
+}
+h1 span { color:var(--blue); }
+.subtitle { color:#c9efff; font-size:1.2rem; }
+p { color:var(--muted); }
+.buttons { display:flex; flex-wrap:wrap; gap:12px; margin-top:25px; }
+.btn {
+  display:inline-block; padding:12px 18px;
+  border:1px solid #72c8f455; border-radius:9px;
+  transition:.25s;
+}
+.btn.primary { background:var(--blue); color:#071525; }
+.btn:hover { transform:translateY(-3px); }
+.portrait { text-align:center; position:relative; }
+.portrait img {
+  width:min(330px,90%); height:410px;
+  object-fit:cover; object-position:top;
+  border-radius:160px 160px 22px 22px;
+  border:1px solid #72c8f488;
+  box-shadow:0 0 65px #3999d333;
+}
+.stats {
+  display:grid; grid-template-columns:repeat(3,1fr);
+  background:#10283eaa; border:1px solid #ffffff20;
+  border-radius:15px; margin-bottom:80px;
+}
+.stat { text-align:center; padding:22px 8px; }
+.stat strong { display:block; color:#c9efff; }
+.stat span { color:var(--muted); font-size:.8rem; }
+section { padding-bottom:75px; }
+h2 { font:700 clamp(2rem,5vw,3rem)/1.2 'Playfair Display',serif; }
+.grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+.card {
+  padding:25px; border-radius:15px;
+  background:linear-gradient(145deg,#10283e,#091b2c);
+  border:1px solid #ffffff20;
+}
+.card h3 { margin-top:0; }
+.facts {
+  display:grid; grid-template-columns:1fr 1fr;
+  gap:12px; margin-top:20px;
+}
+.fact { background:#071525aa; padding:12px; border-radius:8px; }
+.fact small { display:block; color:var(--muted); }
+.fact strong { font-size:.9rem; }
+.trait { display:flex; gap:12px; margin:18px 0; }
+.icon { color:var(--blue); font-size:1.5rem; }
+.trait p { margin:0; }
+.quote {
+  border-left:3px solid var(--blue);
+  padding:10px 20px; color:#c9efff;
+  font:1.5rem 'Playfair Display',serif;
+}
+footer {
+  border-top:1px solid #ffffff20;
+  padding:25px 0; text-align:center;
+  color:var(--muted); font-size:.85rem;
+}
+.copyright { color:var(--blue); margin-top:8px; }
+@media(max-width:700px) {
+  nav { gap:12px; font-size:.8rem; }
+  .hero { grid-template-columns:1fr; gap:25px; }
+  .portrait { order:-1; }
+  .portrait img { height:340px; width:250px; }
+  .grid { grid-template-columns:1fr; }
+  .stats { margin-bottom:55px; }
+  .card { padding:20px; }
+}
+</style>
+</head>
+
+<body>
+<header class="wrap">
+  <a href="#home" class="logo">RE<span>:</span>ZERO</a>
+  <nav>
+    <a href="#profil">Profil</a>
+    <a href="#karakter">Karakter</a>
+    <a href="#quote">Quote</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero wrap" id="home">
+  <div>
+    <div class="tag">CHARACTER PROFILE · RE:ZERO</div>
+    <h1>RE<span>M.</span></h1>
+    <div class="subtitle">The Blue-Haired Oni Maid</div>
+    <p>Tenang, setia, dan berhati kuat. Di balik sikapnya yang lembut, Rem menyimpan keberanian luar biasa untuk melindungi orang-orang yang berarti baginya.</p>
+    <div class="buttons">
+      <a class="btn primary" href="#profil">Kenali Rem ↓</a>
+      <a class="btn" href="#karakter">Karakter Rem</a>
+    </div>
+  </div>
+
+  <div class="portrait">
+    <img
+      src="https://rezero.fandom.com/wiki/Special:FilePath/Rem_Anime.png"
+      alt="Rem dari anime Re:Zero"
+      onerror="this.style.display='none';this.nextElementSibling.hidden=false">
+    <div hidden style="font-size:100px;color:#72c8f4">❄ REM</div>
+  </div>
+</section>
+
+<div class="wrap stats">
+  <div class="stat"><strong>Rem</strong><span>Nama karakter</span></div>
+  <div class="stat"><strong>Oni</strong><span>Ras</span></div>
+  <div class="stat"><strong>Water & Ice</strong><span>Gaya sihir</span></div>
+</div>
+
+<section class="wrap" id="profil">
+  <div class="tag">01 / ABOUT HER</div>
+  <h2>Lebih dari sekadar maid.</h2>
+  <p>Rem merupakan karakter penting dalam anime Re:Zero − Starting Life in Another World, sebuah kisah fantasi tentang Subaru Natsuki yang terlempar ke dunia lain.</p>
+
+  <div class="grid">
+    <article class="card">
+      <h3>Profil Singkat</h3>
+      <p>Rem bekerja sebagai pelayan di kediaman Roswaal bersama saudari kembarnya, Ram. Ia dikenal karena kedisiplinan, kemampuan bertarung, dan kepeduliannya.</p>
+      <div class="facts">
+        <div class="fact"><small>Saudari</small><strong>Ram</strong></div>
+        <div class="fact"><small>Tempat bekerja</small><strong>Kediaman Roswaal</strong></div>
+        <div class="fact"><small>Keahlian</small><strong>Bertarung & sihir</strong></div>
+        <div class="fact"><small>Kepribadian</small><strong>Setia & perhatian</strong></div>
+      </div>
+    </article>
+
+    <article class="card" id="karakter">
+      <h3>Keistimewaan Rem</h3>
+      <div class="trait">
+        <div class="icon">❄</div>
+        <p><strong>Kekuatan</strong><br>Menggunakan kekuatan oni dan sihir dalam pertarungan.</p>
+      </div>
+      <div class="trait">
+        <div class="icon">♡</div>
+        <p><strong>Kesetiaan</strong><br>Selalu berusaha menjalankan tanggung jawabnya.</p>
+      </div>
+      <div class="trait">
+        <div class="icon">✦</div>
+        <p><strong>Keteguhan</strong><br>Berani menghadapi situasi sulit dan melindungi orang lain.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="wrap" id="quote">
+  <div class="tag">02 / HER SPIRIT</div>
+  <h2>Lembut, tetapi tidak lemah.</h2>
+  <div class="quote">
+    Keberanian bukan berarti tidak pernah takut, melainkan tetap memilih untuk melangkah.
+  </div>
+  <p>Kalimat orisinal yang terinspirasi dari karakter Rem, bukan kutipan resmi anime.</p>
+  <p>Fan-made page untuk tujuan informasi dan apresiasi karakter. Re:Zero dan karakternya merupakan milik pemegang hak cipta masing-masing.</p>
+</section>
+</main>
+
+<footer>
+  <div>REM PROFILE · Fan-made website</div>
+  <div>Dibuat dengan ♥ untuk penggemar Re:Zero</div>
+  <div class="copyright">Copyright © 2026 by Syabil. All rights reserved.</div>
+</footer>
+</body>
+</html>
+  
